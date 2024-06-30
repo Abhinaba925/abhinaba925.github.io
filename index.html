@@ -2,50 +2,87 @@
 <html>
 <head>
   <title>Abhinaba's Website</title>
-  <style> /* Embedded CSS for styling */
+  <style>
     body {
-      font-family: Arial, sans-serif; /* Modern font */
-      margin: 0; /* Remove default body margins */
-      background-color: #f4f4f4; /* Light background */
-      color: #333; /* Dark text */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
     }
 
-    header { /* Style the header section */
+    header {
       background-color: #333;
       color: white;
       text-align: center;
-      padding: 2rem 0; /* Add top/bottom padding */
+      padding: 2rem 0;
     }
 
     h1 {
       margin: 0;
     }
 
-    nav { /* Navigation bar style */
+    nav {
       background-color: #555;
       padding: 1rem;
+      text-align: center;
     }
 
-    nav a { /* Style navigation links */
+    nav a {
       color: white;
       text-decoration: none;
       margin: 0 1rem;
     }
 
-    main { /* Main content area style */
-      padding: 2rem;
-      max-width: 800px; /* Limit width for readability */
-      margin: 0 auto; /* Center the content */
+    nav a:hover {
+      text-decoration: underline;
     }
 
-    footer { /* Style the footer */
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    .profile-photo {
+      text-align: center;
+    }
+
+    .profile-photo img {
+      max-width: 150px;
+      border-radius: 50%;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .gallery img {
+      width: calc(33.333% - 10px);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
       background-color: #333;
       color: white;
       text-align: center;
       padding: 1rem;
-      position: fixed; /* Stick to the bottom */
+      position: fixed;
       bottom: 0;
       width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      .gallery img {
+        width: calc(50% - 10px);
+      }
     }
   </style>
 </head>
@@ -55,18 +92,61 @@
   </header>
   <nav>
     <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#photography">Photography</a>
   </nav>
 
   <main>
-    <h2>Welcome to my website!</h2>
-    <p>Hey, this is my personal website. I'll share some cool stuff here.</p>
-    </main>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="profile-photo">
+        <img src="path_to_your_photo.jpg" alt="Your Photo">
+      </div>
+      <p>Hello! I am Abhinaba. Welcome to my personal website where I share my projects, educational background, and my passion for photography.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>You can reach me via email at <a href="mailto:your_email@example.com">your_email@example.com</a>.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <p>Here you can list your educational background, degrees, and any certifications you have.</p>
+      <ul>
+        <li>Bachelor's in Computer Science - XYZ University</li>
+        <li>Master's in Software Engineering - ABC University</li>
+        <!-- Add more education details as needed -->
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Details about your projects can go here. Briefly describe each project and its significance.</p>
+      <ul>
+        <li>Project One - A brief description of project one.</li>
+        <li>Project Two - A brief description of project two.</li>
+        <!-- Add more projects as needed -->
+      </ul>
+    </section>
+
+    <section id="photography">
+      <h2>Photography</h2>
+      <p>Below are some of my favorite photographs I've taken.</p>
+      <div class="gallery">
+        <img src="photo1.jpg" alt="Photo 1">
+        <img src="photo2.jpg" alt="Photo 2">
+        <img src="photo3.jpg" alt="Photo 3">
+        <!-- Add more photos as needed -->
+      </div>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2024 Abhinaba</p>
   </footer>
 </body>
 </html>
-
