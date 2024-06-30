@@ -4,14 +4,14 @@
   <title>Abhinaba's Website</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
       margin: 0;
       background-color: #f4f4f4;
       color: #333;
     }
 
     header {
-      background-color: #333;
+      background: linear-gradient(to right, #333, #555);
       color: white;
       text-align: center;
       padding: 2rem 0;
@@ -19,10 +19,11 @@
 
     h1 {
       margin: 0;
+      font-size: 3rem;
     }
 
     nav {
-      background-color: #555;
+      background-color: #444;
       padding: 1rem;
       text-align: center;
     }
@@ -31,6 +32,7 @@
       color: white;
       text-decoration: none;
       margin: 0 1rem;
+      font-weight: bold;
     }
 
     nav a:hover {
@@ -39,10 +41,11 @@
 
     main {
       padding: 2rem;
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
       background-color: white;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
     }
 
     section {
@@ -51,11 +54,20 @@
 
     .profile-photo {
       text-align: center;
+      margin-bottom: 1rem;
     }
 
     .profile-photo img {
       max-width: 150px;
       border-radius: 50%;
+      border: 4px solid #333;
+    }
+
+    .quote {
+      font-size: 1.2rem;
+      font-style: italic;
+      text-align: center;
+      margin: 2rem 0;
     }
 
     .gallery {
@@ -67,16 +79,23 @@
     .gallery img {
       width: calc(33.333% - 10px);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
     }
 
     footer {
-      background-color: #333;
+      background: linear-gradient(to right, #555, #333);
       color: white;
       text-align: center;
       padding: 1rem;
       position: fixed;
       bottom: 0;
       width: 100%;
+      font-size: 0.9rem;
     }
 
     @media (max-width: 600px) {
@@ -109,7 +128,11 @@
         IIT Bombay. Prior to joining IIT Bombay, I completed my M.Tech. from IIT Delhi jointly under department of EE and Physics. I am 
         recipient of multiple fellowships including INSPIRE, CSIR, MHRD.
       The areas which excite me most are Quantum Computing, Machine Learning, Quantitative Finance, and Wireless Communication. I also love
-      to write in my free time. You can find my blogs here at https://medium.com/@abhinabaghosh.iit </p>
+      to write in my free time. You can find my blogs here at <a href="https://medium.com/@abhinabaghosh.iit" target="_blank">Medium</a>.</p>
+    </section>
+
+    <section class="quote">
+      <p>"The only way to do great work is to love what you do." - Steve Jobs</p>
     </section>
 
     <section id="contact">
@@ -141,9 +164,9 @@
       <h2>Photography</h2>
       <p>Below are some of my favorite photographs I've taken.</p>
       <div class="gallery">
-        <img src="photo1.jpg" alt="Photo 1">
-        <img src="photo2.jpg" alt="Photo 2">
-        <img src="photo3.jpg" alt="Photo 3">
+        <img src="images/photo1.jpg" alt="Photo 1">
+        <img src="images/photo2.jpg" alt="Photo 2">
+        <img src="images/photo3.jpg" alt="Photo 3">
         <!-- Add more photos as needed -->
       </div>
     </section>
